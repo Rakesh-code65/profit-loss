@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background: rgb(183, 172, 156);
+}
+
+label{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.output-box{
+    background:cyan;
+    margin-top: 5%;
+    padding: 3%;
+    /* width:50%; */
+    font-weight: bolder;
+    text-transform:uppercase;
+    color:rebeccapurple
+}
+h1{
+    color:cyan;
+}
