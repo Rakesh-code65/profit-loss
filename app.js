@@ -33,6 +33,16 @@ function calaculateProfitAndLoss(initial, quantity, current){
         var lossPercentage = Math.trunc((loss / initial) * 100) ;
 
         showOutput(`the loss is ${loss} and the losspercent is ${lossPercentage}%`);
+        
+         if(!initial)
+        showOutput(`Invalid Initial Price`);
+    
+    if(!quantity)
+        showOutput(`Invalid Quantity`);
+    
+    if(!current)
+        showOutput(`Invalid current Price`);
+        
     }
     else if(current > initial ){
          var profit = ((current - initial) * quantity).toFixed(2);
@@ -40,9 +50,28 @@ function calaculateProfitAndLoss(initial, quantity, current){
         
 
          showOutput(`the profit is ${profit} and the profit-percentage is ${profitPercentage}`);
+        
+         if(!initial)
+        showOutput(`Invalid Initial Price`);
+    
+    if(!quantity)
+        showOutput(`Invalid Quantity`);
+    
+    if(!current)
+        showOutput(`Invalid current Price`);
+        
     }
     else {
         showOutput(`No pain no gain no gain no pain`);
+        
+         if(!initial)
+        showOutput(`Invalid Initial Price`);
+    
+    if(!quantity)
+        showOutput(`Invalid Quantity`);
+    
+    if(!current)
+        showOutput(`Invalid current Price`);
 
 
     }
